@@ -1,12 +1,9 @@
-import React from "react";
-import Layout from "./components/Layout";
-import Profile from "./components/Profile";
+import React from 'react';
+import * as S from './style'
 
-const App  = () => {
-  return (
-  <main>
-    <Layout>
-    <img src="https://avatars.githubusercontent.com/u/104384260?v=4" 
+const Profile = () => {
+    return <S.Wrapper>
+         <img src="https://avatars.githubusercontent.com/u/104384260?v=4" 
             alt="Avatar of user"/>
             <h1>Priscila Solla</h1>
             <h3>Username: </h3>
@@ -25,11 +22,8 @@ const App  = () => {
               <span>5</span>
             </div>
           </div>
-    <div>Repositories</div>
-    <div>Starreds</div>
-    </Layout> 
-  </main>
-  );
+    </S.Wrapper>;
+    
 };
 
-export default App;
+export default Profile;
